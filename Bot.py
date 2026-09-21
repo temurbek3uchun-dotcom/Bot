@@ -100,5 +100,7 @@ def handle_text(message):
 
 
 print("Bot tayyor va ishga tushdi!")
-bot.infinity_polling()
 
+# 409 xatoligini oldini olish uchun webhook tozalanadi
+bot.remove_webhook()
+bot.infinity_polling()
